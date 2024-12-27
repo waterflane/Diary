@@ -18,9 +18,9 @@ def read():
         print('Enter чтобы продолжить')
         now_text = input()
     else:
-        len_F = sum(1 for _ in f)
-        if len_F == 0: print('Ничего оне найденно!')
-        else: print(f.readlines())
+        help_list = f.readlines()
+        for i in range(len(help_list)):
+            print(help_list[i])
         f.close()
         print('Enter чтобы продолжить')
         now_text = input()
